@@ -1,4 +1,14 @@
 # Writing and Presentation Test Week 1
+
+## Materi 1 minggu 
+
+- [Unix Command Line](#unix-command-line)
+- [Git dan Github](#git-dan-github)
+- [HTML](#html)
+- [CSS](#css)
+- [Algoritma dan struktur data](#algoritma-dan-struktur-data)
+- [Javascript Dasar](#javascript-dasar)
+
 ## Unix Command Line 
 - Shell merupakan sebuah program yang digunakan oleh user supaya dapat berinteraksi dengan sistem operasi
 - Contoh terminal basic atau basic shell yang sudah terinstall secara default di windows adalah powershell dan commandprompt (CMD)
@@ -27,11 +37,52 @@
 - rm merupakan command untuk menghapus sebuah file 
 - kemudian jika ingin menghapus sebuah directory kita bisa menggunakan perintah rm -r
 
-## Git & Github
+## Git dan Github
 - ### Git
      Sebuah sistem yang merekam perubahan repository yang ada diproject dari waktu ke waktu
 - ### Github
     Salah satu penyedia jasa hosting git repository yang populer selain Gitlab dan Bitbucket 
 - ### Kenapa Git & Github wajib digunakan oleh developer ?
      Alasan  kenapa Git & Github wajib bagi seorang developer singkat saja karena untuk saling berkolaborasi dengan para developer lain dalam mengembangkan suatu aplikasi
+
+- ### Perbedaan Git dan Github
+| <div align="center">Git       </div>               |<div align="center"> Github  </div>   |
+| :------ |   ------:       |
+| Meng-install software di penyimpanan lokal|Host melalui layanan cloud|
+| Akses secara offline|Akses secara online|
+| Open sourced licensed|Pilihan bagi pengguna gratis dan pengguna berbayar|
+
+- ### Command
+- git init digunakan untuk membuat repository baru
+- git config global user.name dan git config global global user.mail untuk mengkonfigurasi git
+- git config --list untuk mengecek hasil konfigurasi
+- git add untuk menambahkan file baru
+- git commit untuk menyimpan perubahan ke database, kemudian jika ingin menambahkan pesan apa saja yang baru disimpan bisa gunakan -m 
+- git remote untuk menghubungkan repository github dan lokal yang sudah kita buat
+- git push untuk mengirim perubahan ke server
+- git clone untuk melakukan cloning dari server github ke lokal
+
+## HTML
+
+- ### Peranan HTML 
+  Peranan Hypertext Markup Language atau biasa disebut HTML adalah sebuah kerangka awal (struktur) yang harus dibuat terlebih dahulu dalam pembuatan website
+
+- ### Tools HTML
+- Code editor : Visual Studio Code,Sublime,Notepad++ dll
+- Web browser : Firefox,Chrome,Microsoft edge dll
+
+- ### HTML Structure 
+  Untuk membuat sebuah struktur awal HTML pada sebuah code editor visual studio code kalian bisa menggunakan (!) dan (doc)
+
+- ### Tag dasar HTML
+  HTML memiliki dua jenis tag yaitu single tag dan double tag
+
+- ### Single tag
+- untuk menampilkan gambar <img/>
+- untuk menambahkan field inputan <input/>
+- untuk menghubungkan file file <link/>
+
+- ### Double tag
+- Untuk membuat sebuah heading kita dapat menggunakan tag <h1> ____</h1>
+- Untuk membuat sebuah paragraph kita dapat menggunakan tag <p>____</p>
 
