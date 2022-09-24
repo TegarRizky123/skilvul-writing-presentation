@@ -53,14 +53,14 @@
 | Open sourced licensed|Pilihan bagi pengguna gratis dan pengguna berbayar|
 
 - ### Command
-- git init digunakan untuk membuat repository baru
-- git config global user.name dan git config global global user.mail untuk mengkonfigurasi git
-- git config --list untuk mengecek hasil konfigurasi
-- git add untuk menambahkan file baru
-- git commit untuk menyimpan perubahan ke database, kemudian jika ingin menambahkan pesan apa saja yang baru disimpan bisa gunakan -m 
-- git remote untuk menghubungkan repository github dan lokal yang sudah kita buat
-- git push untuk mengirim perubahan ke server
-- git clone untuk melakukan cloning dari server github ke lokal
+- `git init` digunakan untuk membuat repository baru
+- `git config global user.name` dan `git config global global user.email` untuk mengkonfigurasi git
+- `git config --list` untuk mengecek hasil konfigurasi
+- `git add` untuk menambahkan file baru
+- `git commit` untuk menyimpan perubahan ke database, kemudian jika ingin menambahkan pesan apa saja yang baru disimpan bisa gunakan -m 
+- `git remote` untuk menghubungkan repository github dan lokal yang sudah kita buat
+- `git push` untuk mengirim perubahan ke server
+- `git clone` untuk melakukan cloning dari server github ke lokal
 
 ## HTML
 
@@ -78,11 +78,31 @@
   HTML memiliki dua jenis tag yaitu single tag dan double tag
 
 - ### Single tag
-- untuk menampilkan gambar <img/>
-- untuk menambahkan field inputan <input/>
-- untuk menghubungkan file file <link/>
+- untuk menampilkan gambar `<img/>`
+- untuk menambahkan field inputan `<input/>`
+- untuk menghubungkan file file `<link/>`
 
 - ### Double tag
-- Untuk membuat sebuah heading kita dapat menggunakan tag <h1> ____</h1>
-- Untuk membuat sebuah paragraph kita dapat menggunakan tag <p>____</p>
+- Untuk membuat sebuah heading kita dapat menggunakan tag    `<h1>__</h1>`
+- Untuk membuat sebuah paragraph kita dapat menggunakan tag  `<p>__</p>`
+- Untuk membuat sebuah order list kita dapat menggunakan tag `<ol>__</ol>`
+- Untuk membuat sebuah table kita dapat menggunakan tag      `<table>__</table>`
+- Untuk membuat sebuah form kita dapat menggunakan tag       `<form>__</form>`
+
+- ### Semantic HTML
+  menggunakan element HTML yang sesuai dengan kebutuhan konten
+  
+- ### Tag Semantic HTML
+- `<header>__</header>`
+- `<nav>__</nav>`
+- `<section>__</section>`
+- `<article>__</article>`
+- `<main>__</main>`
+- `<aside>__</aside>`
+- `<footer>__</footer>`
+
+- ### Deploy HTML
+  Deploy adalah sebuah proses kita mempublish halaman html kita ke server agar orang lain dapat mengaksesnya untuk layanan deploy sendiri ada banyak sekali platform gratis seperti : Github pages,Netlify,Heroku dll.
+  
+## CSS
 
