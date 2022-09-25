@@ -1,14 +1,5 @@
 # Writing and Presentation Test Week 1
 
-## Materi 1 minggu 
-
-- [Unix Command Line](#unix-command-line)
-- [Git dan Github](#git-dan-github)
-- [HTML](#html)
-- [CSS](#css)
-- [Algoritma dan struktur data](#algoritma-dan-struktur-data)
-- [Javascript Dasar](#javascript-dasar)
-
 ## Unix Command Line 
 - Shell merupakan sebuah program yang digunakan oleh user supaya dapat berinteraksi dengan sistem operasi
 - Contoh terminal basic atau basic shell yang sudah terinstall secara default di windows adalah powershell dan commandprompt (CMD)
@@ -105,4 +96,56 @@
   Deploy adalah sebuah proses kita mempublish halaman html kita ke server agar orang lain dapat mengaksesnya untuk layanan deploy sendiri ada banyak sekali platform gratis seperti : Github pages,Netlify,Heroku dll.
   
 ## CSS
+- ### Peranan CSS 
+  Peranan Cascading Style Sheet atau biasa disebut CSS adalah sebuah baju dalam pembuatan website karena bertujuan untuk menarik orang lain dengan mengubah warna,font,dan kemudian mengatur tata letak agar pengguna merasa tertarik
+
+- ### Penggunaan CSS
+  Ada 3 cara menggunakan CSS yaitu : Inline,Internal,External
+
+- Inline CSS
+   Disisipkan didalam element html
+```html
+    <h1 style="color: blue;">Hello World!</h1>
+```
+
+- Internal CSS
+  Disisipkan pada bagian `<head></head>`
+  ```html
+  <head>
+  <style>
+     h1{
+       background-color: aqua;
+     }
+  </style>
+  </head> 
+  ```
+  
+ - External CSS
+   Menggunakan file CSS yang terpisah dan dihubungkan menggunakan `<link>` yang disisipkan di `<head>`
+  ```html
+  <link rel="stylesheet" href="style.css" />
+  ```
+  
+- ### Syntax CSS Dasar
+- Untuk menentukan element mana yang akan diberi style `Selector`
+- Untuk menentukan syle apa yang akan diberikan `Property` 
+- Untuk memberikan nilai pada property style yang sudah diberikan `Value` 
+
+- ### Metode Responsive Web Design CSS
+- Untuk menentukan style yang berbeda pada masing-masing device `Media Query`
+- Untuk menentukan layout yang responsive `Flexbox`
+- Untuk menentukan layout yang responsive `Grid`
+
+- ### Flexbox
+- Untuk menentukan posisi dari flex item secara horizontal `justify content`
+- Untuk menentukan element mana yang akan menjadi flex container `flex container`
+- Untuk menentukan element mana yang akan menjadi flex item `flex item`
+- Untuk menempatkan item didepan `flex start`
+- Untuk menempatkan item dibelakang `flex end`
+- Untuk memberikan ruang pada setiap dua item yang bersebelahan `space between`
+- Untuk memberikan ruang pada sekitar tiap item `space around`
+
+## Algoritma Dan Struktur Data
+- Algoritma adalah langkah-langkah yang dilakukan untuk memecahkan masalah secara efektif 
+- Struktur Data adalah sebuah konsep abstrak yang membentuk dan mengatur data agar data didalam komputer dapat diakses dan diperbarui secara efisien
 
