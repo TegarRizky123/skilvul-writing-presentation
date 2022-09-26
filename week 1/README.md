@@ -149,3 +149,6 @@
 - Algoritma adalah langkah-langkah yang dilakukan untuk memecahkan masalah secara efektif 
 - Struktur Data adalah sebuah konsep abstrak yang membentuk dan mengatur data agar data didalam komputer dapat diakses dan diperbarui secara efisien
 
+- ### Manfaat Algoritma
+
+
