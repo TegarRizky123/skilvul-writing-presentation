@@ -150,5 +150,35 @@
 - Struktur Data adalah sebuah konsep abstrak yang membentuk dan mengatur data agar data didalam komputer dapat diakses dan diperbarui secara efisien
 
 - ### Manfaat Algoritma
+|<div align="center"> Manfaat Algoritma          </div>                       |
+| :----                                                                       |
+| Membantu menyederhanakan suatu program yang rumit dan juga besar.           |
+| Membantu menyelesaikan suatu masalah dengan logika dan juga sistematis.     |
 
+- ### Contoh Algoritma Sederhana
+``` 
+let nama = "Tegar";
+console.log("Hai Saya " + nama); 
+Output : 
+Hai Saya Tegar
+```
+
+## JS
+Js atau biasa dikenal dengan sebutan JavaScript merupakan bahasa pemrograman yang sangat powerfull yang digunakan untuk logic pada sebuah website
+
+- ### Perananan JavaScript
+  Jika HTML adalah sebuah kerangka dan CSS adalah sebuah baju maka JavaScript adalah membuat website menjadi interaktif
+
+- ### Variable
+  Pada JavaScript ada 3 cara untuk membuat variable : `let`,`var`,`const`
+  
+- ### TipeData
+  Tipe Data adalah klasifikasi yang kita berikan untuk berbagai macam data yang digunakan dalam programming. 
+  JavaScript memiliki 6 tipe data fundamental :
+  - number
+  - string
+  - boolean
+  - null
+  - undefined
+  - object
 
