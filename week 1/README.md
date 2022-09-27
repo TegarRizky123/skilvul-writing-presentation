@@ -181,4 +181,21 @@ Js atau biasa dikenal dengan sebutan JavaScript merupakan bahasa pemrograman yan
   - null
   - undefined
   - object
-
+  
+- ### Operator
+  Operator aritmatika digunakan di operasi matematika yang melibatkan data dengan tipe number.
+  | <div align="center">Operator </div>|<div align="center"> Deskripsi </div>   |
+  | :------ |   ------:                            |
+  | + |Penjumlahan                                 |
+  | - |Pengurangan                                 |
+  | * |Perkalian                                   |
+  | / |Pembagian                                   |
+  | **|Eksponen (pangkat)                          |
+  | % |Modulus (menghasilkan sisa hasil pembagian) | 
+  | ++|Increment (menambah 1)                      |
+  | --|Decrement (mengurangi 1)                    |
+  
+- ### Conditional
+  Conditional adalah sebuah persyaratan contohnya :
+  Jika kita mengantuk maka tidur dan jika kita tidak mengantuk maka jangan tidur
+ 
