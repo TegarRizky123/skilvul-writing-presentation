@@ -198,4 +198,63 @@ Js atau biasa dikenal dengan sebutan JavaScript merupakan bahasa pemrograman yan
 - ### Conditional
   Conditional adalah sebuah persyaratan contohnya :
   Jika kita mengantuk maka tidur dan jika kita tidak mengantuk maka jangan tidur
+  
+-If..
+```
+let makan = "lapar";
+if (makan === "lapar"){
+  console.log('Saya akan makan');
+}
+```
+
+-If..else
+```
+let makan = "tidak lapar";
+if (makan === "lapar"){
+  console.log('Saya akan makan');
+}else{
+    console.log('Saya tidak makan');
+}
+```
+
+-Switch case
+```
+let lampu = "kuning";
+
+  	switch (lampu){
+  		case "hijau":
+  			console.log ("jalan");
+  			break;
+  		case "kuning":
+  			console.log ("hati-hati");
+  			break;
+  		case "hijau":
+  			console.log ("jalan");
+  			break;
+  		default:
+  		    console.log ("warna tidak terdeteksi");
+  	}
+```
+
+-Ternary operator
+```
+let haus = "iya";
+haus ? console.log("minum") : console.log("tidak minum");
+```
+
+- ### LOOPING
+  Looping merupakan statement yang mengulang suatu instruksi hingga kondisi terpenuhi atau jika kondisi stop atau berhenti
+
+- Ada 3 macam looping
+  - for loop
+  - while loop
+  - nested loop
+
+- For loop
+```
+  let nilai = 1 ; 
+  for (nilai; nilai <= 20 ; nilai++){
+    console.log(nilai) 
+} 
+```
  
