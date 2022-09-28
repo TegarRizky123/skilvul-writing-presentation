@@ -137,6 +137,7 @@
 - Untuk menentukan layout yang responsive `Grid`
 
 - ### Flexbox
+  Flexbox atau fleksible box berfungsi untuk memudahkan untuk mengatur layout, posisi, dan ukuran dari tiap element di dalamnya
 - Untuk menentukan posisi dari flex item secara horizontal `justify content`
 - Untuk menentukan element mana yang akan menjadi flex container `flex container`
 - Untuk menentukan element mana yang akan menjadi flex item `flex item`
