@@ -164,7 +164,7 @@ Output :
 Hai Saya Tegar
 ```
 
-## JS
+## JavaScript
 Js atau biasa dikenal dengan sebutan JavaScript merupakan bahasa pemrograman yang sangat powerfull yang digunakan untuk logic pada sebuah website
 
 - ### Perananan JavaScript
