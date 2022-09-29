@@ -7,12 +7,12 @@
 - Selain CLI kita juga punya shell berbasis graphical user interface (GUI) misalnya : windows,macOS atau ubuntu
 - Untuk mengakses CLI kita menggunakan sebuah terminal emulator
 - Command Line interface merupakan tampilan dari sebuah terminal yang digunakan untuk kita menaruh command untuk menjalankan suatu program, mengelola file, dan berinteraksi dengan komputer.
- (picture terminal git)
+
 - ### File system structure
 - Sistem operasi menggunakan sesuatu yang disebut file system
 - Sebuah file system mengatur bagaimana sebuah data disimpan didalam sebuah system
 - Dalan sistem operasi windows menyusun file nya dan directory nya menggunakan struktur yang bentuknya mirip dengan pohon
-- (gambar struktur direktori)
+
 - ### Command
 - pwd digunakan untuk melihat posisi directory yang sedang aktif/posisi sekarang user berada
 - ls digunakan untuk melihat isi files suatu directory 
