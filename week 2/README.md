@@ -74,7 +74,7 @@
 - Membuat Function
   - ``function`` merupakan function keyword
   - ``greetings`` merupakan sebuah nama function atau identifier
-  - ``didalam {}`` merupakan function body
+  - didalam ``{}`` merupakan function body
 ```
    function greetings() {
     return "Hello world!";
