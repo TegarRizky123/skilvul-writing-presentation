@@ -87,3 +87,29 @@
    console.log(greetings());
 ```
 
+- Parameter
+  Parameter adalah syarat input yang harus dimasukkan ke dalam suatu fungsi dan dideklarasikan bersama dengan deklarasi fungsi. pada contoh dibawah ini number1 dan       number 2 adalah parameter.
+
+- Argument
+  Argument adalah nilai yang dimasukkan ke dalam suatu fungsi,sesuai dengan persyaratan parameter dimana argument dituliskan bersamaan dengan pemanggilan fungsi. pada contoh dibawah ini 3 dan 4 adalah argument.
+
+```
+   function operasiPenjumlahan(number1, number2){
+   return number1 + number2;
+   }
+   
+   console.log(operasiPenjumlahan(3, 4))
+```
+
+- Arrow Function 
+  Adalah cara lain menuliskan function, ini adalah fitur terbaru yang ada pada ES6 (JavaScript Version)
+  
+```
+   const greetings = () => {
+    return `Hello world!`;
+   };
+   console.log(greetings());
+```
+
+- ### DataType & Method
+  
