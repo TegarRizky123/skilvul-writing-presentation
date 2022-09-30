@@ -1,4 +1,5 @@
 # Writing and Presentation Test Week 1
+YouTube : https://youtu.be/gVinrY94ttY
 
 ## Unix Command Line 
 - Shell merupakan sebuah program yang digunakan oleh user supaya dapat berinteraksi dengan sistem operasi
