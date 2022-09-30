@@ -15,21 +15,35 @@
   let nilai = 1 ; 
   for (nilai; nilai <= 20 ; nilai++){
     console.log(nilai) 
-} 
+  } 
 ```
 
 - While loop
   While loop akan menjalankan intruksi pengulangan kondisi bernilai true, gunakan while loop jika kita tidak mengetahui jumlah pasti pengulangan.
 
 ```
-  let jumlahUser = 5;
-  let i = 1;
-  while (i <= jumlahUser) {
-    console.log("tampilkan user ke ", i);
-    i++; 
+  let hitung = 1;
+  
+  while (hitung < 10) {
+    console.log("Hitung");
+    hitung++;
   }
 ```
 
 - Do while
+```
+  do {
+    console.log("Hitung");
+    hitung++;
+  } while (hitung <= 10);
+```
+
+- Nested loop 
+  Nested loop adalah dimana kita membuat perulangan didalam perulangan
+ 
+- ### Scope
+   
+  
+
   
 
