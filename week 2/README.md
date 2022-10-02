@@ -11,7 +11,7 @@
 
 - For loop
    Jika kita ingin menggunakan for loop pastikan kita tau nilai seberapa banyak nilai pasti untuk penggulangannya
-```
+```javascript
   let nilai = 1 ; 
   for (nilai; nilai <= 20 ; nilai++){
     console.log(nilai) 
@@ -21,7 +21,7 @@
 - While loop
   While loop akan menjalankan intruksi pengulangan kondisi bernilai true, gunakan while loop jika kita tidak mengetahui jumlah pasti pengulangan.
 
-```
+```javascript
    let hitung = 1;
   
    while (hitung < 10) {
@@ -31,7 +31,7 @@
 ```
 
 - Do while
-```
+```javascript
   do {
     console.log("Hitung");
     hitung++;
@@ -47,7 +47,7 @@
 - Global Scope
   Global Scope berarti variabel yang kita buat bisa diakses dimanapun dalam suatu file,Agar menjadi global scope suatu variabel harus dideklarasikan diluar {}
 
-```
+```javascript
    let nama = "Tegar";
    function greeting(){
      return nama;
@@ -59,7 +59,7 @@
   Local Scope kebalikan dari Global Scope yang dimana kita tidak dapat mengakses variabel dimanapun dalam suatu file kecuali jika kita mengaksesnya didalam sebuah 
   blocks,sebuah variabel akan menjadi local scope jika variabel tersebut dideklarasikan di dalam {}
 
-```
+```javascript
    function greetings() {
     let nama = "Tegar";
     return nama;
@@ -75,14 +75,14 @@
   - ``function`` merupakan function keyword
   - ``greetings`` merupakan sebuah nama function atau identifier
   - didalam ``{}`` merupakan function body
-```
+```javascript
    function greetings() {
     return "Hello world!";
    }
 ```
 
 - Memanggil Function
-```
+```javascript
    greetings();
    console.log(greetings());
 ```
@@ -93,7 +93,7 @@
 - Argument
   Argument adalah nilai yang dimasukkan ke dalam suatu fungsi,sesuai dengan persyaratan parameter dimana argument dituliskan bersamaan dengan pemanggilan fungsi. pada contoh dibawah ini 3 dan 4 adalah argument.
 
-```
+```javascript
    function operasiPenjumlahan(number1, number2){
    return number1 + number2;
    }
@@ -104,7 +104,7 @@
 - Arrow Function 
   Adalah cara lain menuliskan function, ini adalah fitur terbaru yang ada pada ES6 (JavaScript Version)
   
-```
+```javascript
    const greetings = () => {
     return `Hello world!`;
    };
@@ -115,7 +115,7 @@
 
 - Protoype
   Prototype adalah sebuah object yang berisi method-method yang dapat digunakan oleh object lain. Prototype dapat diakses dengan menggunakan tanda titik (.) setelah     nama object.Pada contoh di bawah ini, method toLowerCase() merupakan method yang ada di dalam prototype String. Method toLowerCase() akan mengubah string menjadi huruf kecil.
-```
+```javascript
    let nama = "TEGAR";
    console.log(nama.toLowerCase());
 ```
@@ -133,100 +133,100 @@
 
 - Method String
   - Untuk mengubah karakter string menjadi huruf kecil 
-  ```
+  ```javascript
   console.log(nama.toLowerCase()); //tegar risqy yulian santoso
   ```
   
   - Untuk mengubah karakter string menjadi huruf besar
-  ```
+  ```javascript
   console.log(nama.toUpperCase()); //TEGAR RISQY YULIAN SANTOSO
   ```
 
   - Untuk mengembalikan karakter berdasarkan posisi dari indeks nya contoh kita ingin mengambil huruf t nya maka kita tisi indeks ke 0
-  ```
+  ```javascript
   console.log(nama.charAt(0)); // t
   ```
   
   - Untuk mencari karakter dan jika ditemukan akan mengembalikan nilai true dan jika ditemukan akan mengembalikan false
-  ```
+  ```javascript
   console.log(nama.includes("santoso")); // true
   ```
   
   - Untuk membagi dari string yang akan kita tuju kemudian dipisah berdasarkan spasi menjadi sebuah data array
-  ```
+  ```javascript
   console.log(nama.split(" ")); // ['tegar', 'risqy', 'yulian', 'santoso']
   ```
 
 - Method Number
   - Untuk mengubah number menjadi sebuah string
-  ```
+  ```javascript
   let angka = 20;
   angka.toString(); // '20'
   ```
   
   - Untuk mengetahui karakter number atau bukan kita bisa menggunakan isNAN, jika karakter string maka akan mengembalikan nilai true, dan jika karakter number akan         mengembalikan nilai false
-  ```
+  ```javascript
   console.log(isNaN(1)); // false
   console.log(isNaN("tegar")); // true
   ```
   
   - Untuk menentukan jumlah angka yang akan kita ambil dibelakang koma dan mengembalikan nilai dalam bentuk string
-  ```
+  ```javascript
   let pi = 3.14123212
   pi.toFixed(2); // '3.14'
   ```
   
 - Method Math
   - Untuk mengubah angka - menjadi +
-  ```
+  ```javascript
   console.log(Math.abs(-1)); // 1
   ```
   
   - Untuk menghitung hasil dari pangkat
-  ```
+  ```javascript
   let bilangan = 6;
   let pangkat = 2;
   console.log(Math.pow(bilangan, pangkat)); // 36
   ```
   
   - Untuk menghitung akar kuadrat
-  ```
+  ```javascript
   console.log(Math.sqrt(bilangan)); // 2.4494897427
   ```
   
   - Untuk mengitung ankar pangkat 3
-  ```
+  ```javascript
   console.log(Math.cbrt(bilangan)); // 1.8171205928
   ```
   
   - Untuk membulatkan angka desimal menjadi bilangan bulat
-  ```
+  ```javascript
   let bilangan1 = 7.7;
   console.log(Math.round(bilangan1)); // 8
   ```
   
   - Untuk membulatkan angka desimal menjadi bilangan bulat ke bawah
-  ```
+  ```javascript
   console.log(Math.floor(bilangan1)); // 7
   ```
   
   - Untuk membulatkan angka desimal menjadi bilangan bulat ke atas
-  ```
+  ```javascript
   console.log(Math.ceil(bilangan1)); // 8
   ```
   
   - Untuk mencari angka random
-  ```
+  ```javascript
   console.log(Math.random());
   ```
   
   - Untuk mencari angka terbesar di antara parameter
-  ```
+  ```javascript
   console.log(Math.max(1, 4, 6, 7, 10)); // 10
   ```
   
   - Untuk mencari angka terkecil diantara parameter
-  ```
+  ```javascript
   console.log(Math.min(1, 4, 6, 7, 10)); // 1
   ```
 - ### Primitive & Non Primitive
