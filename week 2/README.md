@@ -288,81 +288,52 @@
     const title = document.querySelector(".title");
     const title = document.querySelector("h1");
     ```
-  - Menggunakan Query Selector All
-    ```javascript
-    const title = document.querySelectorAll("#title");
-    const title = document.querySelectorAll(".title");
-    const title = document.querySelectorAll("h1");
-    ```
 
 - ### Cara mengakses DOM Node - Child
 
   - Menggunakan Child Nodes
     ```javascript
-    const title = document.getElementById("title");
-    const childNodes = title.childNodes;
+    const name = document.getElementById("name");
+    const childNodes = name.childNodes;
     ```
   - Menggunakan Children
     ```javascript
-    const title = document.getElementById("title");
-    const children = title.children;
+    const name = document.getElementById("name");
+    const children = name.children;
     ```
   - Menggunakan First Child
     ```javascript
-    const title = document.getElementById("title");
-    const firstChild = title.firstChild;
+    const name = document.getElementById("name");
+    const firstChild = name.firstChild;
     ```
   - Menggunakan First Element Child
     ```javascript
-    const title = document.getElementById("title");
-    const firstElementChild = title.firstElementChild;
+    const name = document.getElementById("name");
+    const firstElementChild = name.firstElementChild;
     ```
   - Menggunakan Last Child
     ```javascript
-    const title = document.getElementById("title");
-    const lastChild = title.lastChild;
+    const name = document.getElementById("name");
+    const lastChild = name.lastChild;
     ```
   - Menggunakan Last Element Child
     ```javascript
-    const title = document.getElementById("title");
-    const lastElementChild = title.lastElementChild;
+    const name = document.getElementById("name");
+    const lastElementChild = name.lastElementChild;
     ```
 
 - ### Cara mengakses DOM Node - Parent
 
   - Menggunakan Parent Node
     ```javascript
-    const title = document.getElementById("title");
-    const parentNode = title.parentNode;
+    const name = document.getElementById("name");
+    const parentNode = name.parentNode;
     ```
   - Menggunakan Parent Element
     ```javascript
-    const title = document.getElementById("title");
-    const parentElement = title.parentElement;
+    const name = document.getElementById("name");
+    const parentElement = name.parentElement;
     ```
-
-## Javascript Dasar - DOM - Traversing Element
-
-- Menggunakan Next Sibling
-  ```javascript
-  const title = document.getElementById("title");
-  const nextSibling = title.nextSibling;
-  ```
-- Menggunakan Next Element Sibling
-  ```javascript
-  const title = document.getElementById("title");
-  const nextElementSibling = title.nextElementSibling;
-  ```
-- Menggunakan Previous Sibling
-  ```javascript
-  const title = document.getElementById("title");
-  const previousSibling = title.previousSibling;
-  ```
-- Menggunakan Previous Element Sibling
-  ```javascript
-  const title = document.getElementById("title");
-  const previousElementSibling = title.previousElementSibling;
-  ```
 
 ## Javascript Dasar - DOM - Manipulating Elements
 
@@ -414,37 +385,7 @@
     title.style.cssText =
       "color: red; background-color: black; font-size: 50px;";
     ```
-  - Menggunakan CSS File
-    ```css
-    /* style.css */
-    .red {
-      color: red;
-      background-color: black;
-      font-size: 50px;
-    }
-    ```
-    ```javascript
-    const title = document.getElementById("title");
-    title.classList.add("red");
-    ```
-  - Menggunakan CSS File - Multiple Class
-    ```css
-    /* style.css */
-    .red {
-      color: red;
-    }
-    .bg-black {
-      background-color: black;
-    }
-    .fs-50 {
-      font-size: 50px;
-    }
-    ```
-    ```javascript
-    const title = document.getElementById("title");
-    title.classList.add("red", "bg-black", "fs-50");
-    ```
-
+    
 ## Javascript Dasar - DOM - Events
 
 - ### Cara menambahkan event pada DOM Node
@@ -460,19 +401,6 @@
     ```javascript
     const title = document.getElementById("title");
     title.onclick = function () {
-      console.log("Hello World");
-    };
-    ```
-  - Menggunakan Event Handler - Multiple Event
-    ```javascript
-    const title = document.getElementById("title");
-    title.onclick = function () {
-      console.log("Hello World");
-    };
-    title.onmouseover = function () {
-      console.log("Hello World");
-    };
-    title.onmouseout = function () {
       console.log("Hello World");
     };
     ```
