@@ -229,4 +229,313 @@
   ```
   console.log(Math.min(1, 4, 6, 7, 10)); // 1
   ```
-    
+- ### Primitive & Non Primitive
+
+- Primitive 
+  - String
+  - Number
+  - Boolean
+  - Null
+  - Undefined
+- Non Primitive
+  - Object
+  - Function
+  - Array
+  - Date
+  - RegExp
+  - Error
+
+## DOM
+
+- ### Apa itu Document Object Model (DOM)?
+
+  Document Object Model (DOM) adalah sebuah interface yang memungkinkan kita untuk mengakses dan memanipulasi elemen HTML dan CSS. DOM menyediakan sebuah API yang memungkinkan kita untuk mengubah struktur halaman web, style, dan konten. DOM juga menyediakan sebuah API untuk membuat aplikasi yang interaktif dan menarik.
+
+- ### Apa itu DOM Tree?
+
+  DOM Tree adalah sebuah struktur data yang merepresentasikan struktur halaman web. DOM Tree terdiri dari node-node yang saling berhubungan. Setiap node memiliki tipe yang berbeda. Nodetipe element disebut element node. Node tipe text disebut text node. Node tipe comment disebut comment node. Node tipe document disebut document node. Node tipe attribute disebut attribute node.
+
+- ### Apa itu DOM Node?
+
+  DOM Node adalah sebuah objek yang merepresentasikan sebuah elemen HTML atau CSS. DOM Node memiliki properti dan metode yang dapat digunakan untuk mengakses dan memanipulasi elemen HTML atau CSS. DOM Node memiliki tipe yang berbeda. Tipe dari DOM Node dapat dilihat pada gambar di bawah ini.
+
+- ### Apa manfaat DOM?
+  - Memanipulasi elemen HTML dan CSS
+  - Mengubah struktur halaman web
+  - Mengubah style halaman web
+  - Mengubah konten halaman web
+  - Membuat aplikasi yang interaktif dan menarik
+
+## Javascript Dasar - DOM - Selecting Element
+
+- ### Cara mengakses DOM Node
+
+  - Menggunakan ID
+    ```javascript
+    const title = document.getElementById("title");
+    ```
+  - Menggunakan Class
+    ```javascript
+    const title = document.getElementsByClassName("title");
+    ```
+  - Menggunakan Tag Name
+    ```javascript
+    const title = document.getElementsByTagName("h1");
+    ```
+  - Menggunakan Query Selector
+    ```javascript
+    const title = document.querySelector("#title");
+    const title = document.querySelector(".title");
+    const title = document.querySelector("h1");
+    ```
+  - Menggunakan Query Selector All
+    ```javascript
+    const title = document.querySelectorAll("#title");
+    const title = document.querySelectorAll(".title");
+    const title = document.querySelectorAll("h1");
+    ```
+
+- ### Cara mengakses DOM Node - Child
+
+  - Menggunakan Child Nodes
+    ```javascript
+    const title = document.getElementById("title");
+    const childNodes = title.childNodes;
+    ```
+  - Menggunakan Children
+    ```javascript
+    const title = document.getElementById("title");
+    const children = title.children;
+    ```
+  - Menggunakan First Child
+    ```javascript
+    const title = document.getElementById("title");
+    const firstChild = title.firstChild;
+    ```
+  - Menggunakan First Element Child
+    ```javascript
+    const title = document.getElementById("title");
+    const firstElementChild = title.firstElementChild;
+    ```
+  - Menggunakan Last Child
+    ```javascript
+    const title = document.getElementById("title");
+    const lastChild = title.lastChild;
+    ```
+  - Menggunakan Last Element Child
+    ```javascript
+    const title = document.getElementById("title");
+    const lastElementChild = title.lastElementChild;
+    ```
+
+- ### Cara mengakses DOM Node - Parent
+
+  - Menggunakan Parent Node
+    ```javascript
+    const title = document.getElementById("title");
+    const parentNode = title.parentNode;
+    ```
+  - Menggunakan Parent Element
+    ```javascript
+    const title = document.getElementById("title");
+    const parentElement = title.parentElement;
+    ```
+
+## Javascript Dasar - DOM - Traversing Element
+
+- Menggunakan Next Sibling
+  ```javascript
+  const title = document.getElementById("title");
+  const nextSibling = title.nextSibling;
+  ```
+- Menggunakan Next Element Sibling
+  ```javascript
+  const title = document.getElementById("title");
+  const nextElementSibling = title.nextElementSibling;
+  ```
+- Menggunakan Previous Sibling
+  ```javascript
+  const title = document.getElementById("title");
+  const previousSibling = title.previousSibling;
+  ```
+- Menggunakan Previous Element Sibling
+  ```javascript
+  const title = document.getElementById("title");
+  const previousElementSibling = title.previousElementSibling;
+  ```
+
+## Javascript Dasar - DOM - Manipulating Elements
+
+- ### Cara mengubah DOM Node
+
+  - Menggunakan Inner HTML
+    ```javascript
+    const title = document.getElementById("title");
+    title.innerHTML = "Hello World";
+    ```
+  - Menggunakan Inner Text
+    ```javascript
+    const title = document.getElementById("title");
+    title.innerText = "Hello World";
+    ```
+  - Menggunakan Text Content
+    ```javascript
+    const title = document.getElementById("title");
+    title.textContent = "Hello World";
+    ```
+  - Menggunakan Class List
+    ```javascript
+    const title = document.getElementById("title");
+    title.classList.add("red");
+    title.classList.remove("red");
+    title.classList.toggle("red");
+    ```
+  - Menggunakan Attributes
+    ```javascript
+    const title = document.getElementById("title");
+    title.setAttribute("id", "title");
+    title.removeAttribute("id");
+    ```
+
+## Javascript Dasar - DOM - Manipulating Styles
+
+- ### Cara mengubah style DOM Node
+
+  - Menggunakan Style
+    ```javascript
+    const title = document.getElementById("title");
+    title.style.color = "red";
+    title.style.backgroundColor = "black";
+    title.style.fontSize = "50px";
+    ```
+  - Menggunakan CSS Text
+    ```javascript
+    const title = document.getElementById("title");
+    title.style.cssText =
+      "color: red; background-color: black; font-size: 50px;";
+    ```
+  - Menggunakan CSS File
+    ```css
+    /* style.css */
+    .red {
+      color: red;
+      background-color: black;
+      font-size: 50px;
+    }
+    ```
+    ```javascript
+    const title = document.getElementById("title");
+    title.classList.add("red");
+    ```
+  - Menggunakan CSS File - Multiple Class
+    ```css
+    /* style.css */
+    .red {
+      color: red;
+    }
+    .bg-black {
+      background-color: black;
+    }
+    .fs-50 {
+      font-size: 50px;
+    }
+    ```
+    ```javascript
+    const title = document.getElementById("title");
+    title.classList.add("red", "bg-black", "fs-50");
+    ```
+
+## Javascript Dasar - DOM - Events
+
+- ### Cara menambahkan event pada DOM Node
+
+  - Menggunakan Event Listener
+    ```javascript
+    const title = document.getElementById("title");
+    title.addEventListener("click", function () {
+      console.log("Hello World");
+    });
+    ```
+  - Menggunakan Event Handler
+    ```javascript
+    const title = document.getElementById("title");
+    title.onclick = function () {
+      console.log("Hello World");
+    };
+    ```
+  - Menggunakan Event Handler - Multiple Event
+    ```javascript
+    const title = document.getElementById("title");
+    title.onclick = function () {
+      console.log("Hello World");
+    };
+    title.onmouseover = function () {
+      console.log("Hello World");
+    };
+    title.onmouseout = function () {
+      console.log("Hello World");
+    };
+    ```
+
+## Javascript Dasar - DOM - Forms
+
+- ### Cara mengakses DOM Node - Form
+
+  - Menggunakan Form
+    ```javascript
+    const form = document.getElementById("form");
+    ```
+  - Menggunakan Form - Input
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    ```
+  - Menggunakan Form - Input - Value
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    const value = input.value;
+    ```
+  - Menggunakan Form - Input - Type
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    const type = input.type;
+    ```
+  - Menggunakan Form - Input - Placeholder
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    const placeholder = input.placeholder;
+    ```
+  - Menggunakan Form - Input - Checked
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    const checked = input.checked;
+    ```
+  - Menggunakan Form - Input - Disabled
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    const disabled = input.disabled;
+    ```
+  - Menggunakan Form - Input - Required
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    const required = input.required;
+    ```
+  - Menggunakan Form - Input - Max Length
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    const maxLength = input.maxLength;
+    ```
+  - Menggunakan Form - Input - Min Length
+    ```javascript
+    const form = document.getElementById("form");
+    const input = form.input;
+    const minLength = input.minLength;
+    ```
+ 
