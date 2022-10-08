@@ -115,7 +115,7 @@ berbagai tipe data yang berbeda.
   ```
   
 ### **Multidimensional Array**
-   > Multidimensional array bisa dianalogikan sebagai array of array
+- Multidimensional array bisa dianalogikan sebagai array of array
 - Multidimensional array sama seperti matriks yaitu memiliki 2 dimensi (x,y)
     ```javascript
     let inventory = [
@@ -147,4 +147,124 @@ berbagai tipe data yang berbeda.
     inventory.push(['Hoodie', 2]);
     console.log(inventory);
     ```
+
+### **Object**
+- Di JavaScript, objek bisa digambarkan sebagai sesuatu yang memiliki properti dan nilai.
+- Membuat object
+```javascript
+  let namaObjek = {
+  namaProperti1: nilai1,
+  namaProperti2: nilai2
+  };
+```
+
+- Mengakses properti ada 2 cara yaitu :
+- Dot Notation 
+  ```javascript
+  let mahasiswa = {
+  nama: 'tegar',
+  umur: 19,
+  hobi: 'game'
+  };
+  
+  console.log(mahasiswa.nama);
+  // output 'tegar'
+  ```
+  
+- Bracket Notation
+```javascript
+  let mahasiswa = {
+  nama: 'tegar',
+  umur: 19,
+  hobi: 'game'
+  };
+  
+  console.log(orang["nama"]);
+  // output 'tegar'
+```
+
+- Mengupdate value properti pada sebuah object 
+```javascript
+   let hewan = {
+   nama: "kucing",
+   kaki: 4,
+   warna: "putih",
+   };
+  
+  console.log(hewan.warna);
+  // output "putih"
+  
+  //merubah value dari properti warna
+  hewan.warna = "hitam";
+  console.log(hewan.warna);
+  // output "hitam"
+```
+
+- Menghapus properti pada sebuah object
+```javascript
+    let hewan = {
+    nama: "kucing",
+    kaki: 4,
+    warna: "putih",
+    };
     
+    console.log(hewan);
+    //output {nama: "kucing", kaki: 4, warna:"putih"}
+    delete hewan.warna
+    console.log(hewan);
+    //output {nama: "kucing", kaki:"4"}
+```
+
+- Method object
+```javascript
+
+const greeting = {
+  welcome: function () {
+    return "halo selamat datang";
+  },
+  afterPay: function () {
+    return "Terimakasih sudah membeli produk kami";
+  },
+};
+
+console.log(greeting.welcome());
+console.log(greeting.afterPay());
+
+let siswa = {
+  nama: "dila",
+  umur: 17,
+  hobi: "membaca",
+};
+
+console.log(siswa);
+// [nama, umur, hobi]
+
+console.log(Object.keys(siswa));
+console.log(Object.values(siswa));
+```
+
+- Nested object
+  object yang berasal dari turunan object lainnya
+```javascript
+                       
+let buku = {
+  judul: "tips jago javascript",
+  tahun: 2022,
+  penulis: {
+    penulis1: {
+      nama: "Reyhan",
+      umur: 28,
+      kota: "jakarta",
+    },
+    penulis2: {
+      nama: "aby",
+      umur: 25,
+      kota: "bandung",
+    },
+  },
+};
+
+console.log(buku);
+console.log(buku.penulis.penulis1.nama);
+console.log(buku.penulis.penulis2.umur);
+```
