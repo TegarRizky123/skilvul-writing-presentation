@@ -1,6 +1,6 @@
 ## JavaScript Intermediate
-### **Array**
-- **Array** adalah struktur data yang digunakan untuk menyimpan sebuah kelompok data dalam satu tempat, array di javascript dapat menampung 
+### Array
+- Array adalah struktur data yang digunakan untuk menyimpan sebuah kelompok data dalam satu tempat, array di javascript dapat menampung 
 berbagai tipe data yang berbeda.
 - Untuk membuat array kita perlu menggunakan square bracket atau kurung siku []
 - Array pada javascript dihitung mulai dari index ke- 0 
@@ -18,7 +18,7 @@ berbagai tipe data yang berbeda.
      //output = 20
      ``` 
 
-- **Array Properti**. Array memiliki 5 properti yang sering digunakan yaitu :
+- Array Properti. Array memiliki 5 properti yang sering digunakan yaitu :
   - constructor
   - length
   - index 
@@ -33,7 +33,7 @@ berbagai tipe data yang berbeda.
      console.log(Data.length);
      ```
      
-- **Array Method**  atau biasa disebut dengan built in methods 
+- Array Method atau biasa disebut dengan built in methods 
 - Contoh array built in method :
    - Untuk menambahkan item baru ke dalam array kita bisa menggunakan push() dan unshift()
    - Push () untuk menambahkan item di index terakhir
@@ -92,7 +92,7 @@ berbagai tipe data yang berbeda.
      //output [1,2,3,4,5]
      ```
 
-- **Looping pada Array**. Built in methods untuk melakukan looping pada array ada .map() dan .forEach()
+- Looping pada Array Built in methods untuk melakukan looping pada array ada .map() dan .forEach()
 - Contoh looping pada array
   - .forEach() digunakan untuk melakukan iterasi dalam mengakses elemen array 
   ```javascript
@@ -407,7 +407,7 @@ console.log("Memasak");
   p2(p3)
   ```
   
-- Asynchronous - Promise** merupakan suatu object dan digunakan hanya untuk satu event dengan menyimpan hasil dari sebuah operasi asynchronous baik itu hasil yang diinginkan (resolved value) atau alasan kenapa operasi itu gagal (failure reason)
+- Asynchronous - Promise merupakan suatu object dan digunakan hanya untuk satu event dengan menyimpan hasil dari sebuah operasi asynchronous baik itu hasil yang diinginkan (resolved value) atau alasan kenapa operasi itu gagal (failure reason)
   ```javascript
     function GetUser(id) {
     return new Promise((resolve, reject) => {
