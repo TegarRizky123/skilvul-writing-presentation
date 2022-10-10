@@ -1,4 +1,4 @@
-## JavaScript 
+## JavaScript Intermediate
 ### **Array**
 - **Array** adalah struktur data yang digunakan untuk menyimpan sebuah kelompok data dalam satu tempat, array di javascript dapat menampung 
 berbagai tipe data yang berbeda.
@@ -268,3 +268,191 @@ console.log(buku);
 console.log(buku.penulis.penulis1.nama);
 console.log(buku.penulis.penulis2.umur);
 ```
+- Looping pada object
+    Ada 4 cara looping pada object.
+   - for in
+      ```javascript
+      let motor = {
+        type: "Kawasaki",
+        model: "350",
+        color: "white",
+      };
+      for (let i in motor) {
+        console.log(i);
+      }
+      ```
+   - for of
+      ```javascript
+      let motor = {
+        type: "Kawasaki",
+        model: "3500",
+        color: "white",
+      };
+      for (let i of Object.keys(motor)) {
+        console.log(i);
+      }
+      ```
+   - forEach
+      ```javascript
+      let motor = {
+        type: "Kawasaki",
+        model: "350",
+        color: "white",
+      };
+      Object.keys(motor).forEach((i) => {
+        console.log(i);
+      });
+      ```
+   - map
+      ```javascript
+      let motor = {
+        type: "Kawasaki",
+        model: "350",
+        color: "white",
+      };
+      let motor2 = Object.keys(motor).map((i) => {
+        return i;
+      });
+      console.log(motor2);
+      ```
+      
+### Modules & Recursive
+- Modules memungkinkan untuk memecah kode menjadi file terpisah sehingga mempermudah untuk maintain code
+- JavaScript Module bergantung pada pernyataan impor dan ekspor
+- Recursive adalah fungsi yang memanggil dirinya sendiri sampai suatu kondisi tertentu terpenuhi
+- A new paradigm :
+  - Procedural
+  - Conditional
+  - Looping
+  - Modular (function)
+  - Recursive
+- Ciri dari recursive:
+  - Fungsi recursive memiliki kondisi yang menyatakan kapan fungsi tersebut berhenti. 
+  - fungsi recursive selalu memaanggil dirinya sendiri sambil mengurangi atau memecahkan data masukan setiap panggilannya.
+- Contoh mencari nilai pangkat 
+```javascript
+    function faktorial(n) {
+  if (n == 1) {
+    return 1;
+  } else {
+    return n * faktorial(n - 1);
+  }
+}
+
+console.log(faktorial(4))
+// output = 24
+```
+
+###  Asynchronous 
+- Asynchronous sebuah teknik yang menyelesaikan fungsi secara paralel
+- Penggunaan asynchronous dapat dilakukan jika kita ingin mengambil data dari database
+- Mengapa perlu menggunakan asynchronous? Asynchronous dibutuhkan ketika ada proses yangg membutuhkan waktu lama. Jadi kita bisa mengerjakan proses yg lain secara paralel.
+- Callbacks adalah suatu function namun cara pengeksekusiannya yang berbeda yaitu hanya mengeksekusi pada point tertentu.
+- Ada dua function yang digunakan untuk mengatur penjadwalan asynchronous adalah **setTimeout** function dan **setInterval** function 
+- contoh penggunaan function
+  - setTimeout
+```javascript
+setTimeout(() => {
+  console.log("Cuci baju"); 
+}, 1000);
+console.log("Menyapu");
+console.log("Mengepel");
+console.log("Memasak");
+
+// 1000 ms = 1 second
+// Output:
+// Menyapu
+// Mengepel
+// Memasak
+// Cuci baju
+```
+   
+  - setInterval
+```javascript
+setInterval(() => {
+  console.log("Cuci baju"); 
+}, 3000);
+console.log("Menyapu");
+console.log("Mengepel");
+console.log("Memasak");
+
+// 3000 ms = 3 second
+// Output:
+// Menyapu
+// Mengepel
+// Memasak
+// Cuci baju (x time)
+// Cuci baju akan dijalankan setiap 3 detik sekali
+```
+
+- Contoh Penggunaan Callback pada Asynchronous
+  ```javascript
+    function p1() {
+    console.log('p1 done')
+  }
+
+    function p2(callback) {
+    setTimeout(
+    function() {
+    console.log('p2 done')
+      callback()
+    },100
+    )
+  }
+
+  function p3() {
+  console.log('p3 done')
+  }
+  p1()
+  p2(p3)
+  ```
+  
+- Asynchronous - Promise** merupakan suatu object dan digunakan hanya untuk satu event dengan menyimpan hasil dari sebuah operasi asynchronous baik itu hasil yang diinginkan (resolved value) atau alasan kenapa operasi itu gagal (failure reason)
+  ```javascript
+    function GetUser(id) {
+    return new Promise((resolve, reject) => {
+    if (id !== "" && id !== undefined) {
+      reesolve (id);
+    } else {
+      reject ("ID Harus di Isi");
+        }
+    });
+    }
+    
+    GetUser( ) 
+    .then((response) => {
+    console.log(response);
+     })
+     .catch((error) => {
+    console.log(error);
+    });
+  ```
+- Asynchronous - Async-Await merupakan fitur yang hadir sejak ES2017 bekerja dengan cara menunda eksekusi hingga proses asynchronous selesai
+- Asynchronous - Fetch merupakan cara baru dalam melakukan network request yang memanfaatkan sebuah Promise dalam penggunaanya. Karen Fetch mengembalikan sebuah Promise maka respon handling yang digunakan adalah **then** jika promise mengembalikan resolve dan **catch** jika promise mengembalikan nilai reject
+  ```javascript
+    fetch("https://pokeapi.co/api/v2/pokemon/pikachu/", {
+    method: "GET"
+    })
+     .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+     console.log(data);
+     })
+    .catch((error) => {
+    console.log(error);
+    });
+  ```
+  
+### Web Storage
+- Web Storage adalah wadah untuk sebuah data yang digunakan untuk penyimpanan data yang terikat di browsernya
+- Jenis Web Storage yang umum digunakan yaitu :
+  - Local Storage
+  - Session storage
+  - Cookies
+
+- Local Storage adalah wadah untuk menampung data user yang digunakan di penyimpanan lokal dan tidak akan hilang selama user tidak menghapus data local storage pada web browser
+
+- Session Storage adalah adalah wadah untuk menampung data user pada sebuah session dan perlu diingat jika kita membuka banyak tab/window dengan URL yang sama, akan menciptakan session storage yang berbeda di masing-masing tab/window. dan Menutup tab/window akan mengakhiri session dan menghapus data yang tersimpan di session storage pada tab/window tersebut.
+
+- Cookies adalah sebuah cara untuk menyimpan data di browser. Cookie akan menyimpan data di browser dan data tersebut akan tetap ada meskipun browser ditutup.
