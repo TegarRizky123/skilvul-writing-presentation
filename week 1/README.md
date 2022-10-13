@@ -201,7 +201,7 @@ Js atau biasa dikenal dengan sebutan JavaScript merupakan bahasa pemrograman yan
   Jika kita mengantuk maka tidur dan jika kita tidak mengantuk maka jangan tidur
   
 -If..
-```
+```javascript
 let makan = "lapar";
 if (makan === "lapar"){
   console.log('Saya akan makan');
@@ -209,7 +209,7 @@ if (makan === "lapar"){
 ```
 
 -If..else
-```
+```javascript
 let makan = "tidak lapar";
 if (makan === "lapar"){
   console.log('Saya akan makan');
@@ -219,7 +219,7 @@ if (makan === "lapar"){
 ```
 
 -Switch case
-```
+```javascript
 let lampu = "kuning";
 
   	switch (lampu){
@@ -238,7 +238,7 @@ let lampu = "kuning";
 ```
 
 -Ternary operator
-```
+```javascript
 let haus = "iya";
 haus ? console.log("minum") : console.log("tidak minum");
 ```
@@ -252,7 +252,7 @@ haus ? console.log("minum") : console.log("tidak minum");
   - nested loop
 
 - For loop
-```
+```javascript
   let nilai = 1 ; 
   for (nilai; nilai <= 20 ; nilai++){
     console.log(nilai) 
