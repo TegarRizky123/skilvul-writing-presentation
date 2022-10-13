@@ -15,19 +15,18 @@ YouTube : https://youtu.be/gVinrY94ttY
 - Dalan sistem operasi windows menyusun file nya dan directory nya menggunakan struktur yang bentuknya mirip dengan pohon
 
 - ### Command
-- pwd digunakan untuk melihat posisi directory yang sedang aktif/posisi sekarang user berada
-- ls digunakan untuk melihat isi files suatu directory 
-- kemudian jika kita ingin melihat sebuah directory yang di sembunyikan bisa menggunakan perintah ls -a 
-- cd merupakan command untuk berpindah dari satu directory ke directory lain
-- mkdir digunakan untuk membuat directory baru
-- Touch digunakan untuk membuat file
-- mkdir merupakan command untuk membuat directory baru  
-- cp digunakan untuk menyalin file 
-- kemudian jika kita ingin menyalin sebuah directory kita bisa menggunakan perintah cp -r
-- mv digunakan untuk memindahkan sebuah file maupun directory 
-- mv juga dapat digunakan untuk mengganti nama file maupun directory
-- rm merupakan command untuk menghapus sebuah file 
-- kemudian jika ingin menghapus sebuah directory kita bisa menggunakan perintah rm -r
+- `pwd` digunakan untuk melihat posisi directory yang sedang aktif/posisi sekarang user berada
+- `ls` digunakan untuk melihat isi files suatu directory 
+- kemudian jika kita ingin melihat sebuah directory yang di sembunyikan bisa menggunakan perintah `ls -a` 
+- `cd` merupakan command untuk berpindah dari satu directory ke directory lain
+- `mkdir` digunakan untuk membuat directory baru
+- `Touch` digunakan untuk membuat file  
+- `cp` digunakan untuk menyalin file 
+- kemudian jika kita ingin menyalin sebuah directory kita bisa menggunakan perintah `cp -r`
+- `mv` digunakan untuk memindahkan sebuah file maupun directory 
+- `mv` juga dapat digunakan untuk mengganti nama file maupun directory
+- `rm` merupakan command untuk menghapus sebuah file 
+- kemudian jika ingin menghapus sebuah directory kita bisa menggunakan perintah `rm -r`
 
 ## Git dan Github
 - ### Git
@@ -158,7 +157,7 @@ YouTube : https://youtu.be/gVinrY94ttY
 | Membantu menyelesaikan suatu masalah dengan logika dan juga sistematis.     |
 
 - ### Contoh Algoritma Sederhana
-``` 
+```javascript 
 let nama = "Tegar";
 console.log("Hai Saya " + nama); 
 Output : 
