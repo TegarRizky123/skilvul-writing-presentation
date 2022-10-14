@@ -109,12 +109,10 @@ berbagai tipe data yang berbeda.
     return item + " " + "segar"
   })
   console.log(buahSegar)
-  //output ['jeruk segar', 'semangka segar', 'pepaya segar', 'rambutan segar']
-  
-  
+  //output ['jeruk segar', 'semangka segar', 'pepaya segar', 'rambutan segar']  
   ```
   
-### **Multidimensional Array**
+### Multidimensional Array
 - Multidimensional array bisa dianalogikan sebagai array of array
 - Multidimensional array sama seperti matriks yaitu memiliki 2 dimensi (x,y)
     ```javascript
@@ -148,7 +146,7 @@ berbagai tipe data yang berbeda.
     console.log(inventory);
     ```
 
-### **Object**
+### Object
 - Di JavaScript, objek bisa digambarkan sebagai sesuatu yang memiliki properti dan nilai.
 - Membuat object
 ```javascript
@@ -273,9 +271,9 @@ console.log(buku.penulis.penulis2.umur);
    - for in
       ```javascript
       let motor = {
-        type: "Kawasaki",
+        tipe: "Kawasaki",
         model: "350",
-        color: "white",
+        warna: "white",
       };
       for (let i in motor) {
         console.log(i);
@@ -284,9 +282,9 @@ console.log(buku.penulis.penulis2.umur);
    - for of
       ```javascript
       let motor = {
-        type: "Kawasaki",
+        tipe: "Kawasaki",
         model: "3500",
-        color: "white",
+        warna: "white",
       };
       for (let i of Object.keys(motor)) {
         console.log(i);
@@ -295,9 +293,9 @@ console.log(buku.penulis.penulis2.umur);
    - forEach
       ```javascript
       let motor = {
-        type: "Kawasaki",
+        tipe: "Kawasaki",
         model: "350",
-        color: "white",
+        warna: "white",
       };
       Object.keys(motor).forEach((i) => {
         console.log(i);
@@ -306,12 +304,24 @@ console.log(buku.penulis.penulis2.umur);
    - map
       ```javascript
       let motor = {
-        type: "Kawasaki",
+        tipe: "Kawasaki",
         model: "350",
-        color: "white",
+        warna: "white",
       };
       let motor2 = Object.keys(motor).map((i) => {
         return i;
+      });
+      console.log(motor2);
+      ```
+   - filter
+     ```javascript
+      let motor = {
+        tipe: "Kawasaki",
+        model: "350",
+        warna: "white",
+      };
+      let motor2 = Object.keys(motor).filter((i) => {
+        return i == "tipe";
       });
       console.log(motor2);
       ```
