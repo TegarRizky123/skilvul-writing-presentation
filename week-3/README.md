@@ -82,7 +82,7 @@ berbagai tipe data yang berbeda.
      ```
    
 - Untuk mengurutkan array kita bisa menggunakan sort ()
-      ```javascript 
+  ```javascript 
      let angka = [1,3,5,2,4];
      console.log(angka);
      //output [1,3,5,2,4]
@@ -90,7 +90,7 @@ berbagai tipe data yang berbeda.
      angka.sort()
      console.log(angka);
      //output [1,2,3,4,5]
-     ```
+  ```
 
 - Looping pada Array Built in methods untuk melakukan looping pada array ada .map() dan .forEach()
 - Contoh looping pada array
