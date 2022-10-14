@@ -313,18 +313,6 @@ console.log(buku.penulis.penulis2.umur);
       });
       console.log(motor2);
       ```
-   - filter
-     ```javascript
-      let motor = {
-        tipe: "Kawasaki",
-        model: "350",
-        warna: "white",
-      };
-      let motor2 = Object.keys(motor).filter((i) => {
-        return i == "tipe";
-      });
-      console.log(motor2);
-      ```
       
 ### Modules & Recursive
 - Modules memungkinkan untuk memecah kode menjadi file terpisah sehingga mempermudah untuk maintain code
