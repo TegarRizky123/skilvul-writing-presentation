@@ -35,7 +35,7 @@ berbagai tipe data yang berbeda.
      
 - Array Method atau biasa disebut dengan built in methods 
 - Contoh array built in method :
-   - Untuk menambahkan item baru ke dalam array kita bisa menggunakan push() dan unshift()
+- Untuk menambahkan item baru ke dalam array kita bisa menggunakan push() dan unshift()
    - Push () untuk menambahkan item di index terakhir
    ```javascript 
      let buah = ['anggur', 'rambutan', 'pepaya'];
@@ -58,7 +58,7 @@ berbagai tipe data yang berbeda.
      //output ['jambu', 'anggur', 'rambutan', 'pepaya']
      ```
    
-   - Untuk menghapus item array kita bisa menggunakan pop() dan shift()
+- Untuk menghapus item array kita bisa menggunakan pop() dan shift()
    - Pop () untuk menghapus item di index terakhir
    ```javascript 
      let buah = ['anggur', 'rambutan', 'pepaya'];
@@ -81,7 +81,7 @@ berbagai tipe data yang berbeda.
      //output ['rambutan', 'pepaya']
      ```
    
-   - Untuk mengurutkan array kita bisa menggunakan sort ()
+- Untuk mengurutkan array kita bisa menggunakan sort ()
       ```javascript 
      let angka = [1,3,5,2,4];
      console.log(angka);
