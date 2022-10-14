@@ -126,7 +126,7 @@
   
 - String Prototype
   untuk mengetahui jumlah karakter dalam sebuah string mengguunakan length
-```
+```javascript
    let nama = "Tegar Risqy Yulian Santoso;
    console.log(nama.length); // 26
 ```
