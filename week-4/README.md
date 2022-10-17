@@ -128,3 +128,200 @@ console.log("Memasak");
 - Clone yaitu menggandakan atau mengcopy sebuah project
 - Fork yaitu sama halnya dengan clone namun langsung mengambil file dari repository
 
+### Responsive Web Design
+
+Responsive Web Design adalah sebuah teknik yang digunakan untuk membuat sebuah website agar dapat menyesuaikan tampilan website sesuai dengan ukuran layar yang digunakan. Responsive Web Design dapat dilakukan dengan menggunakan CSS Media Query.
+
+#### CSS Media Query
+
+  CSS Media Query adalah sebuah aturan CSS yang digunakan untuk menentukan tampilan website sesuai dengan ukuran layar yang digunakan.
+
+  ```css
+  @media screen (max-width: 600px) {
+    /* CSS disini akan dijalankan ketika ukuran layar maksimal 600px */
+  }
+  ```
+
+  - `@media screen` : aturan CSS Media Query
+  - `(max-width: 600px)` : aturan CSS Media Query yang digunakan untuk menentukan ukuran layar maksimal 600px
+
+  ```css
+  @media screen (min-width: 600px) {
+    /* CSS disini akan dijalankan ketika ukuran layar minimal 600px */
+  }
+  ```
+
+  - `@media screen` : aturan CSS Media Query
+  - `(min-width: 600px)` : aturan CSS Media Query yang digunakan untuk menentukan ukuran layar minimal 600px
+
+    ```css
+    @media screen (min-width: 600px) and (max-width: 900px) {
+      /* CSS disini akan dijalankan ketika ukuran layar minimal 600px dan maksimal 900px */
+    }
+    ```
+
+    - `@media screen` : aturan CSS Media Query
+    - `(min-width: 600px) and (max-width: 900px)` : aturan CSS Media Query yang digunakan untuk menentukan ukuran layar minimal 600px dan maksimal 900px
+
+#### Macam-macam satuan relatif yang digunakan untuk responsive
+
+  - #### `em`
+
+    Satuan `em` adalah satuan yang digunakan untuk mengukur ukuran font. Satuan `em` merupakan satuan yang paling umum digunakan untuk responsive.
+
+  - #### `rem`
+
+    Satuan `rem` adalah satuan yang digunakan untuk mengukur ukuran font. Satuan `rem` merupakan satuan yang paling umum digunakan untuk responsive.
+
+  - #### `vw`
+
+    Satuan `vw` adalah satuan yang digunakan untuk mengukur ukuran layar. Satuan `vw` merupakan satuan yang paling umum digunakan untuk responsive.
+
+  - #### `vh`
+
+    Satuan `vh` adalah satuan yang digunakan untuk mengukur ukuran layar. Satuan `vh` merupakan satuan yang paling umum digunakan untuk responsive.
+
+  - #### `vmin`
+
+    Satuan `vmin` adalah satuan yang digunakan untuk mengukur ukuran layar. Satuan `vmin` merupakan satuan yang paling umum digunakan untuk responsive.
+
+  - #### `vmax`
+
+    Satuan `vmax` adalah satuan yang digunakan untuk mengukur ukuran layar. Satuan `vmax` merupakan satuan yang paling umum digunakan untuk responsive.
+
+## Bootstrap 5
+
+Bootstrap 5 adalah sebuah framework CSS yang digunakan untuk mempermudah dalam membuat tampilan website. Bootstrap 5 dapat digunakan untuk membuat tampilan website yang responsive.
+
+  - #### Menggunakan CDN
+
+    Menggunakan CDN adalah cara yang paling mudah untuk menggunakan Bootstrap 5. CDN adalah sebuah jaringan yang berfungsi untuk menyediakan file-file yang dibutuhkan oleh website.
+
+    ```HTML
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    ```
+
+  - #### Container
+
+    Container adalah sebuah elemen yang berfungsi untuk mengatur tampilan website agar terlihat rapi.
+
+    ```HTML
+    <div class="container">
+      <!-- Isi disini -->
+    </div>
+    ```
+
+  - #### Row
+
+    Row adalah sebuah elemen yang berfungsi untuk mengatur tampilan website agar terlihat rapi.
+
+    ```HTML
+    <div class="row">
+      <!-- Isi disini -->
+    </div>
+    ```
+
+  - #### Column
+
+    Column adalah sebuah elemen yang berfungsi untuk mengatur tampilan website agar terlihat rapi.
+
+    ```HTML
+    <div class="col">
+      <!-- Isi disini -->
+    </div>
+    ```
+
+- ### Breakpoint
+
+  - #### xs
+    Breakpoint `xs` adalah breakpoint yang digunakan untuk ukuran layar minimal 0px.
+  - #### sm
+    Breakpoint `sm` adalah breakpoint yang digunakan untuk ukuran layar minimal 576px.
+  - #### md
+    Breakpoint `md` adalah breakpoint yang digunakan untuk ukuran layar minimal 768px.
+  - #### lg
+    Breakpoint `lg` adalah breakpoint yang digunakan untuk ukuran layar minimal 992px.
+  - #### xl
+    Breakpoint `xl` adalah breakpoint yang digunakan untuk ukuran layar minimal 1200px.
+  - #### xxl
+    Breakpoint `xxl` adalah breakpoint yang digunakan untuk ukuran layar minimal 1400px.
+
+- ### Grid System
+  - #### Grid System 1
+
+    Grid System 1 adalah sebuah sistem yang digunakan untuk mengatur tampilan website agar terlihat rapi.
+
+    ```HTML
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- Isi disini -->
+        </div>
+        <div class="col">
+          <!-- Isi disini -->
+        </div>
+        <div class="col">
+          <!-- Isi disini -->
+        </div>
+      </div>
+    </div>
+    ```
+
+  - #### Grid System 2
+
+    Grid System 2 adalah sebuah sistem yang digunakan untuk mengatur tampilan website agar terlihat rapi.
+
+    ```HTML
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <!-- Isi disini -->
+        </div>
+        <div class="col-4">
+          <!-- Isi disini -->
+        </div>
+        <div class="col-4">
+          <!-- Isi disini -->
+        </div>
+      </div>
+    </div>
+    ```
+
+  - #### Grid System 3
+
+    Grid System 3 adalah sebuah sistem yang digunakan untuk mengatur tampilan website agar terlihat rapi.
+
+    ```HTML
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <!-- Isi disini -->
+        </div>
+        <div class="col-6">
+          <!-- Isi disini -->
+        </div>
+      </div>
+    </div>
+    ```
+
+  - #### Grid System 4
+
+    Grid System 4 adalah sebuah sistem yang digunakan untuk mengatur tampilan website agar terlihat rapi.
+
+    ```HTML
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <!-- Isi disini -->
+        </div>
+        <div class="col-4">
+          <!-- Isi disini -->
+        </div>
+      </div>
+    </div>
+    ```
